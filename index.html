@@ -9,13 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/default.css" />
     <link rel="stylesheet" href="css/ui.css" />
-    <link rel="stylesheet" href="css/slide.css">
     <title>Juan's PortFolio</title>
   </head>
   <body>
     <!-- header -->
     <header class="header">
-      <a href="index.html"><h2>Juan's PortFolio</h2></a>
+      <h2>Shin Juan's PortFolio</h2>
     </header>
     <!-- nav -->
     <nav class="nav">
@@ -35,7 +34,7 @@
       </ul>
     </nav>
     <!-- Jumbotron -->
-    <div class="jumbotron" id="about">
+    <div class="jumbotron" id="jumbotron">
       <div class="jumbotron-img">
         <img src="img/face.png" alt="" />
       </div>
@@ -46,19 +45,19 @@
       </div>
     </div>
     <!-- profile -->
-    <div class="profile" id="portfolio">
+    <div class="profile" id="about">
       <div class="profile-a">
         <div class="slide_container">
-                <div class="slide_content slide01">
+                <div class="slide_content">
                     <img src="img/IMG_6415.jpg" alt="">
                 </div>
-                <div class="slide_content slide02">
+                <!-- <div class="slide_content slide02">
                     <img src="img/PHOTO_1398.JPEG" alt="">
 
                 </div>
                 <div class="slide_content slide03">
                     <img src="img/IMG_6500.JPG" alt="">
-                </div>
+                </div> -->
             </div>
       </div>
       <div class="profile-b">
@@ -81,7 +80,7 @@
       </div>
     </div>
     <!-- Portfolio -->
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
       <div class="portfolio-a">
         <h1>PortFolio</h1>
       </div>
@@ -91,7 +90,7 @@
       </div>
     </div>
     <!-- Contact -->
-    <div class="contact" id="#contact">
+    <div class="contact" id="contact">
       <div class="contact-a">
         <h1>Contact</h1>
       </div>
@@ -115,9 +114,10 @@
       </div>
 
     </div>
-
+    <button class="dark_mode_btn" onclick="darkModeOn()">☀️ 일반 모드로 보기</button>
+    <button class="go-to-top" onclick="goToTop()">🔼</button>
     <!-- script -->
     <script src="https://kit.fontawesome.com/a7d60b6ef8.js" crossorigin="anonymous"></script>
-
+    <script src="index.js"></script>
   </body>
 </html>

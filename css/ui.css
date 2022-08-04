@@ -7,7 +7,19 @@ body {
   --secondColor: #1c57e1;
   --thirdColor: #131a1e;
 }
+body::-webkit-scrollbar {
+  width: 8px; /* 스크롤바의 너비 */
+}
 
+body::-webkit-scrollbar-thumb {
+  height: 10%; /* 스크롤바의 길이 */
+  background: var(--secondColor); /* 스크롤바의 색상 */
+  border-radius: 15px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(33, 122, 244, 0.1); /*스크롤바 뒷 배경 색상*/
+}
 .header {
   display: flex;
   justify-content: center;
@@ -45,7 +57,7 @@ body {
 }
 
 .jumbotron {
-  height: 500px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,45 +67,47 @@ body {
 }
 
 .jumbotron-img {
-  height: 60%;
+  height: 50%;
 }
-.jumbotron-img img {
+/* .jumbotron-img img {
   width: 100%;
   height: 100%;
-}
+} */
 .jumbotron-text {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   font-size: 1.6rem;
-  margin: auto;
+  margin-top: 5rem;
 }
+/* /////////////////////////////////////// */
 .profile {
   display: flex;
   align-items: center;
-  padding: 5rem;
   width: 100%;
-  height: 500px;
+  height: 70vh;
+  padding: 1rem;
 }
 
 .profile-a {
-  width: 50%;
+  max-width: 50%;
   margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border: 1px solid white;
   height: 100%;
   overflow: hidden;
+  background-size: cover;
+  border-radius: 10px;
 }
 .slide_container {
-  border: 10px dotted pink;
+  display: flex;
   align-items: center;
   justify-self: center;
   height: 100%;
-  width: 100%;
 }
-.slide_content {
+.slide_container img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .profile-b {
@@ -110,6 +124,7 @@ body {
 .profile-b h4 {
   font-size: 2.5rem;
 }
+/*  포트폴리오 */
 .portfolio {
   display: flex;
   height: 500px;
@@ -117,7 +132,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+/* 컨택트 */
 .contact {
   display: flex;
   height: 500px;
@@ -135,7 +150,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 5rem;
+  max-width: 600px;
 }
 .contact-b i {
   justify-content: space-between;
@@ -144,7 +159,7 @@ body {
 }
 
 .contact_icon {
-  font-size: 8rem;
+  font-size: 7rem;
   text-decoration: none;
   color: var(--mainColor);
 }
@@ -152,4 +167,34 @@ body {
 .contact-b i:hover {
   color: var(--secondColor);
   transition: all 1s;
+}
+
+.go-to-top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 3rem;
+  opacity: 0;
+  transition: all 0.2s;
+}
+.dark_mode_btn {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  background: white;
+  border-radius: 10px;
+  padding: 5px;
+  transition: all 0.2s;
+}
+.dark_mode_btn :hover {
+  size: 100px;
+}
+.dark_mode {
+  background-color: white;
+  color: #131a1e;
+}
+
+.white_mode {
+  background-color: var(--thirdColor);
+  color: white;
 }
