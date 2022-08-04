@@ -1,0 +1,155 @@
+body {
+  background-color: #131a1e;
+}
+
+:root {
+  --mainColor: #779bf0;
+  --secondColor: #1c57e1;
+  --thirdColor: #131a1e;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+}
+.header a {
+  text-decoration: none;
+  color: white;
+}
+.menu {
+  display: flex;
+}
+.menu-item {
+  background: var(--secondColor);
+  color: white;
+  flex-grow: 1;
+}
+.menu-item:hover {
+  flex-grow: 1.5;
+  background: var(--mainColor);
+  transition: all 1s;
+}
+
+.menu-link {
+  display: block;
+  padding: 1em;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+.menu-link:hover {
+  color: white;
+}
+
+.jumbotron {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+  background-size: 100%;
+  color: white;
+}
+
+.jumbotron-img {
+  height: 60%;
+}
+.jumbotron-img img {
+  width: 100%;
+  height: 100%;
+}
+.jumbotron-text {
+  text-align: center;
+  font-size: 1.6rem;
+  margin: auto;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  padding: 5rem;
+  width: 100%;
+  height: 500px;
+}
+
+.profile-a {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  height: 100%;
+  overflow: hidden;
+}
+.slide_container {
+  border: 10px dotted pink;
+  align-items: center;
+  justify-self: center;
+  height: 100%;
+  width: 100%;
+}
+.slide_content {
+  width: 100%;
+  height: 100%;
+}
+
+.profile-b {
+  width: 50%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10%;
+}
+.profile-b h3 {
+  color: var(--mainColor);
+  font-size: 3rem;
+}
+.profile-b h4 {
+  font-size: 2.5rem;
+}
+.portfolio {
+  display: flex;
+  height: 500px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  display: flex;
+  height: 500px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-a {
+  margin-top: 50px;
+  font-size: 2rem;
+}
+.contact-b {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5rem;
+}
+.contact-b i {
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+}
+
+.contact_icon {
+  font-size: 8rem;
+  text-decoration: none;
+  color: var(--mainColor);
+}
+
+.contact-b i:hover {
+  color: var(--secondColor);
+  transition: all 1s;
+}
