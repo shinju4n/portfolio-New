@@ -33,8 +33,7 @@ function darkModeOn() {
 
 window.addEventListener("scroll", function () {
   var height = document.documentElement.scrollTop;
-  console.log(height);
-  if (height > 774) {
+  if (height > 110) {
     this.document.querySelector(".go-to-top").style.opacity = 1;
   } else {
     this.document.querySelector(".go-to-top").style.opacity = 0;

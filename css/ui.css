@@ -1,6 +1,13 @@
-body {
-  background-color: #131a1e;
+html {
+  scroll-behavior: smooth;
 }
+
+body {
+  background: linear-gradient(to bottom, var(--thirdColor), var(--mainColor));
+}
+/* /////////////////////////////////////// */
+/* /////////////////////////////////////// */
+/* /////////////////////////////////////// */
 
 :root {
   --mainColor: #779bf0;
@@ -20,15 +27,22 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-track {
   background: rgba(33, 122, 244, 0.1); /*스크롤바 뒷 배경 색상*/
 }
+/* /////////////////////////////////////// */
+/* /////////////////////////////////////// */
+/* /////////////////////////////////////// */
 .header {
   display: flex;
   justify-content: center;
   font-size: 3rem;
+  padding: 10px;
 }
 .header a {
   text-decoration: none;
   color: white;
 }
+/* /////////////////////////////////////// */
+/* /////////////////////////////////////// */
+/* /////////////////////////////////////// */
 .menu {
   display: flex;
 }
@@ -55,9 +69,12 @@ body::-webkit-scrollbar-track {
 .menu-link:hover {
   color: white;
 }
-
+/* /////////////////////////////////////// */
+/* /////////////////////////////////////// */
+/* /////////////////////////////////////// */
+/* /////////////////////////////////////// */
 .jumbotron {
-  height: 100vh;
+  height: 1000px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,15 +94,22 @@ body::-webkit-scrollbar-track {
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 5rem;
   font-size: 1.6rem;
-  margin-top: 5rem;
+  border: 1px solid white;
+  border-radius: 15px;
 }
+/* /////////////////////////////////////// */
+/* /////////////////////////////////////// */
 /* /////////////////////////////////////// */
 .profile {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 70vh;
+  height: 1000px;
   padding: 1rem;
 }
 
@@ -93,7 +117,7 @@ body::-webkit-scrollbar-track {
   max-width: 50%;
   margin: auto;
   border: 1px solid white;
-  height: 100%;
+  height: 600px;
   overflow: hidden;
   background-size: cover;
   border-radius: 10px;
@@ -102,7 +126,7 @@ body::-webkit-scrollbar-track {
   display: flex;
   align-items: center;
   justify-self: center;
-  height: 100%;
+  height: 600px;
 }
 .slide_container img {
   width: 100%;
@@ -113,9 +137,9 @@ body::-webkit-scrollbar-track {
 .profile-b {
   width: 50%;
   margin: auto;
+  text-align: center;
   justify-content: center;
   align-items: center;
-  padding-left: 10%;
 }
 .profile-b h3 {
   color: var(--mainColor);
@@ -125,14 +149,19 @@ body::-webkit-scrollbar-track {
   font-size: 2.5rem;
 }
 /*  포트폴리오 */
+/* /////////////////////////////////////// */
+/* /////////////////////////////////////// */
 .portfolio {
   display: flex;
-  height: 500px;
+  height: 1000px;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 /* 컨택트 */
+/* /////////////////////////////////////// */
+/* /////////////////////////////////////// */
+/* /////////////////////////////////////// */
+
 .contact {
   display: flex;
   height: 500px;
@@ -168,6 +197,9 @@ body::-webkit-scrollbar-track {
   color: var(--secondColor);
   transition: all 1s;
 }
+/* /////////////////////////////////////// */
+/* /////////////////////////////////////// */
+/* /////////////////////////////////////// */
 
 .go-to-top {
   position: fixed;
@@ -178,17 +210,17 @@ body::-webkit-scrollbar-track {
   transition: all 0.2s;
 }
 .dark_mode_btn {
+  display: flex;
   position: fixed;
   bottom: 15px;
   left: 15px;
   background: white;
   border-radius: 10px;
   padding: 5px;
-  transition: all 0.2s;
+  align-items: center;
+  justify-content: center;
 }
-.dark_mode_btn :hover {
-  size: 100px;
-}
+
 .dark_mode {
   background-color: white;
   color: #131a1e;
@@ -197,4 +229,39 @@ body::-webkit-scrollbar-track {
 .white_mode {
   background-color: var(--thirdColor);
   color: white;
+  border: 1px solid var(--thirdColor);
+}
+
+.go-to-top i {
+  color: var(--thirdColor);
+}
+
+@media (max-width: 575px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+  }
+  .profile-a {
+    height: 300px;
+  }
+
+  .slide_container {
+    height: 300px;
+    padding-right: auto;
+  }
+  .profile-b {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+  }
+  .profile-b h3 {
+    color: var(--mainColor);
+    font-size: 2.5rem;
+  }
+  .profile-b h4 {
+    font-size: 2rem;
+  }
 }
