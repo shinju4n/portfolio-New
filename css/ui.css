@@ -236,6 +236,11 @@ body::-webkit-scrollbar-track {
   color: var(--thirdColor);
 }
 
+.sticky {
+  position: sticky;
+  top: 0px;
+}
+
 @media (max-width: 575px) {
   .profile {
     display: flex;

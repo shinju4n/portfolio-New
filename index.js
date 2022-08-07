@@ -34,8 +34,8 @@ function darkModeOn() {
 window.addEventListener("scroll", function () {
   var height = document.documentElement.scrollTop;
   if (height > 110) {
-    this.document.querySelector(".go-to-top").style.opacity = 1;
+    document.querySelector(".go-to-top").style.opacity = 1;
   } else {
-    this.document.querySelector(".go-to-top").style.opacity = 0;
+    document.querySelector(".go-to-top").style.opacity = 0;
   }
 });
